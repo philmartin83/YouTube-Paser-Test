@@ -15,6 +15,10 @@
 		FFFAAED620CC965300AC1F6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAED520CC965300AC1F6C /* main.m */; };
 		FFFAAEE020CC965300AC1F6C /* YouTube_Paser_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAEDF20CC965300AC1F6C /* YouTube_Paser_TestTests.m */; };
 		FFFAAEEB20CC965300AC1F6C /* YouTube_Paser_TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAEEA20CC965300AC1F6C /* YouTube_Paser_TestUITests.m */; };
+		FFFAAEFD20CC975C00AC1F6C /* PMVideoPlayerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAEFC20CC975C00AC1F6C /* PMVideoPlayerHelper.m */; };
+		FFFAAF0020CC97CB00AC1F6C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFFAAEFF20CC97CA00AC1F6C /* AVFoundation.framework */; };
+		FFFAAF0320CC999400AC1F6C /* PMCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF0220CC999400AC1F6C /* PMCommon.m */; };
+		FFFAAF0620CCA34A00AC1F6C /* PMYTParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF0520CCA34A00AC1F6C /* PMYTParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		FFFAAEE620CC965300AC1F6C /* YouTube Paser TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "YouTube Paser TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFFAAEEA20CC965300AC1F6C /* YouTube_Paser_TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouTube_Paser_TestUITests.m; sourceTree = "<group>"; };
 		FFFAAEEC20CC965300AC1F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFFAAEFB20CC975C00AC1F6C /* PMVideoPlayerHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMVideoPlayerHelper.h; sourceTree = "<group>"; };
+		FFFAAEFC20CC975C00AC1F6C /* PMVideoPlayerHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMVideoPlayerHelper.m; sourceTree = "<group>"; };
+		FFFAAEFF20CC97CA00AC1F6C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FFFAAF0120CC999400AC1F6C /* PMCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMCommon.h; sourceTree = "<group>"; };
+		FFFAAF0220CC999400AC1F6C /* PMCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMCommon.m; sourceTree = "<group>"; };
+		FFFAAF0420CCA34A00AC1F6C /* PMYTParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMYTParser.h; sourceTree = "<group>"; };
+		FFFAAF0520CCA34A00AC1F6C /* PMYTParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMYTParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFFAAF0020CC97CB00AC1F6C /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +97,7 @@
 				FFFAAEDE20CC965300AC1F6C /* YouTube Paser TestTests */,
 				FFFAAEE920CC965300AC1F6C /* YouTube Paser TestUITests */,
 				FFFAAEC420CC964E00AC1F6C /* Products */,
+				FFFAAEFE20CC97CA00AC1F6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +114,8 @@
 		FFFAAEC520CC964E00AC1F6C /* YouTube Paser Test */ = {
 			isa = PBXGroup;
 			children = (
+				FFFAAEFB20CC975C00AC1F6C /* PMVideoPlayerHelper.h */,
+				FFFAAEFC20CC975C00AC1F6C /* PMVideoPlayerHelper.m */,
 				FFFAAEC620CC964E00AC1F6C /* AppDelegate.h */,
 				FFFAAEC720CC964E00AC1F6C /* AppDelegate.m */,
 				FFFAAEC920CC964E00AC1F6C /* ViewController.h */,
@@ -110,6 +125,10 @@
 				FFFAAED120CC965200AC1F6C /* LaunchScreen.storyboard */,
 				FFFAAED420CC965300AC1F6C /* Info.plist */,
 				FFFAAED520CC965300AC1F6C /* main.m */,
+				FFFAAF0120CC999400AC1F6C /* PMCommon.h */,
+				FFFAAF0220CC999400AC1F6C /* PMCommon.m */,
+				FFFAAF0420CCA34A00AC1F6C /* PMYTParser.h */,
+				FFFAAF0520CCA34A00AC1F6C /* PMYTParser.m */,
 			);
 			path = "YouTube Paser Test";
 			sourceTree = "<group>";
@@ -130,6 +149,14 @@
 				FFFAAEEC20CC965300AC1F6C /* Info.plist */,
 			);
 			path = "YouTube Paser TestUITests";
+			sourceTree = "<group>";
+		};
+		FFFAAEFE20CC97CA00AC1F6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFFAAEFF20CC97CA00AC1F6C /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFFAAECB20CC964E00AC1F6C /* ViewController.m in Sources */,
+				FFFAAF0620CCA34A00AC1F6C /* PMYTParser.m in Sources */,
 				FFFAAED620CC965300AC1F6C /* main.m in Sources */,
+				FFFAAEFD20CC975C00AC1F6C /* PMVideoPlayerHelper.m in Sources */,
+				FFFAAF0320CC999400AC1F6C /* PMCommon.m in Sources */,
 				FFFAAEC820CC964E00AC1F6C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
